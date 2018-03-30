@@ -1,0 +1,57 @@
+CREATE TABLE `lkup_id_players` (
+  `ID` varchar(20) DEFAULT NULL,
+  `LAST` varchar(50) DEFAULT NULL,
+  `FIRST` varchar(50) DEFAULT NULL,
+  `DEBUT` date DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_id_managers` (
+  `ID` varchar(20) DEFAULT NULL,
+  `LAST` varchar(50) DEFAULT NULL,
+  `FIRST` varchar(50) DEFAULT NULL,
+  `DEBUT` date DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_id_umps` (
+  `ID` varchar(20) DEFAULT NULL,
+  `LAST` varchar(50) DEFAULT NULL,
+  `FIRST` varchar(50) DEFAULT NULL,
+  `DEBUT` date DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_id_coaches` (
+  `ID` varchar(20) DEFAULT NULL,
+  `LAST` varchar(50) DEFAULT NULL,
+  `FIRST` varchar(50) DEFAULT NULL,
+  `DEBUT` date DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_id_teams` (
+  `ID` varchar(5) DEFAULT NULL,
+  `PAST_ID` varchar(5) DEFAULT NULL,
+  `LEAGUE` varchar(5) DEFAULT NULL,
+  `CITY` varchar(50) DEFAULT NULL,
+  `NICKNAME` varchar(50) DEFAULT NULL,
+  `ALT_NICKNAME` varchar(50) DEFAULT NULL,
+  `DEBUT` date DEFAULT NULL,
+  `RETIRED` date DEFAULT NULL,
+  `LOCATION` varchar(50) DEFAULT NULL,
+  `STATE` varchar(5) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_id_parks` (
+  `ID` varchar(10) DEFAULT NULL,
+  `NAME` varchar(50) DEFAULT NULL,
+  `CITY` varchar(50) DEFAULT NULL,
+  `STATE` varchar(5) DEFAULT NULL,
+  `START` date DEFAULT NULL,
+  `END` date DEFAULT NULL,
+  `LEAGUE` varchar(5) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `lkup_cd_pitches` (
+	`VALUE_CD` varchar(2),
+    `PITCH_DESC` varchar(50),
+    PRIMARY KEY (`VALUE_CD`)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
